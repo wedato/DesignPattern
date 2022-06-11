@@ -1,4 +1,4 @@
-package ct;
+package ct.exo2;
 
 public class Participant implements Observer {
 
@@ -9,8 +9,8 @@ public class Participant implements Observer {
     }
 
     @Override
-    public void update(Question question, String reponse) {
-        System.out.println("La reponse : " + reponse + " vient d'être envoyé à la question :" + question.intitule);
+    public void update(Question question, Reponse reponse) {
+        System.out.println("La reponse : " + reponse.contenu + " vient d'être envoyé à la question :" + question.intitule);
     }
 
 

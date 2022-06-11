@@ -1,4 +1,4 @@
-package ct;
+package ct.exo2;
 
 public class Main {
 
@@ -7,11 +7,12 @@ public class Main {
         var sujetExam = new SujetExam();
         Participant jojo = new Participant("jojolamenace");
         Participant truc = new Participant("truc");
-        sujetExam.addObserver(jojo);
-        sujetExam.addObserver(truc);
+
 
 
         var premiereQuestion = new Question("Petit d ?");
+        premiereQuestion.addObserver(jojo);
+        premiereQuestion.addObserver(truc);
         var deuxiemeQuestion = new Question("On retape ?");
 
         sujetExam.proposerReponse(jojo,premiereQuestion,"la reponse d");

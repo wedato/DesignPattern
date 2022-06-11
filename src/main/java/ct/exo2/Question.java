@@ -1,9 +1,9 @@
-package ct;
+package ct.exo2;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Question {
+public class Question extends Observable {
 
     String intitule;
 
@@ -17,7 +17,9 @@ public class Question {
 
     public void ajouterProposition(Reponse proposition){
 
+
         propositions.add(proposition);
+        notifyObserver(this,proposition);
     }
 
     public void voter(String reponseVote){

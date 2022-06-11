@@ -1,4 +1,4 @@
-package ct;
+package ct.exo2;
 
 public class Reponse {
 

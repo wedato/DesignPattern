@@ -1,9 +1,9 @@
-package ct;
+package ct.exo2;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class SujetExam extends Observable {
+public class SujetExam  {
 
 
     private List<Question> listeQuestions = new ArrayList<>();
@@ -20,7 +20,7 @@ public class SujetExam extends Observable {
         participantsDejaProposerQuestion.add(participant);
         question.ajouterProposition(new Reponse(reponse));
         listeQuestions.add(question);
-        notifyObserver(question,reponse);
+
     }
 
     void voterReponse(Participant participant, Question question, String reponseVote){
